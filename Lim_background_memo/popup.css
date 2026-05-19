@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  min-height: 420px;
+  margin: 0;
+  padding: 14px;
+  font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+#summary {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.clear-btn {
+  flex-shrink: 0;
+  background: #ef4444;
+  color: #fff;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  padding-bottom: 2px;
+  overflow-x: auto;
+}
+
+.filter {
+  background: #e5e7eb;
+  color: #333;
+  white-space: nowrap;
+}
+
+.filter.active {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.delete-btn {
+  background: #f87171;
+  color: #fff;
+}
+
+.delete-btn:hover,
+.clear-btn:hover {
+  opacity: 0.88;
+}
+
+.content {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #222;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.source {
+  margin: 0 0 5px;
+  font-size: 12px;
+  color: #555;
+  word-break: break-word;
+}
+
+.url {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #4f46e5;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.url:hover {
+  text-decoration: underline;
+}
+
+time {
+  display: block;
+  font-size: 11px;
+  color: #999;
+}
+
+.empty {
+  margin-top: 85px;
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
+
+.error {
+  margin-top: 85px;
+  text-align: center;
+  color: #ef4444;
+  font-size: 13px;
+}

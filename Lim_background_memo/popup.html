@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RightSave Notes</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>RightSave Notes</h1>
+        <p id="summary">저장된 항목 0개</p>
+      </div>
+
+      <button id="clearAllBtn" class="clear-btn" type="button">
+        전체 삭제
+      </button>
+    </header>
+
+    <nav class="filter-bar" aria-label="저장 항목 필터">
+      <button class="filter active" type="button" data-type="all">전체</button>
+      <button class="filter" type="button" data-type="selection">텍스트</button>
+      <button class="filter" type="button" data-type="link">링크</button>
+      <button class="filter" type="button" data-type="image">이미지</button>
+      <button class="filter" type="button" data-type="page">페이지</button>
+    </nav>
+
+    <main id="itemList" class="item-list">
+      <p class="empty">저장된 항목이 없습니다.</p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

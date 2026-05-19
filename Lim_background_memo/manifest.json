@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "RightSave Notes",
+  "version": "1.0.0",
+  "description": "우클릭으로 텍스트, 링크, 이미지 주소를 저장하는 웹 스크랩 메모장",
+  "permissions": ["storage", "contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "RightSave Notes",
+    "default_popup": "popup.html"
+  }
+}
